@@ -6,7 +6,7 @@ const retrieveCategoryController = async (request, response) => {
         const category = await retrieveCategoryService(id)
         return response.json(category)
     } catch (error) {
-        response.status(400).json({
+        return response.status(400).json({
             message: error.message
         })
     }
