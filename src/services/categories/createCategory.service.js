@@ -2,7 +2,6 @@ import database from "../../database/index.js";
 
 const createCategoryService = async (name) => {
     try {
-        console.log(name)
         const res = await database.query(
             `INSERT INTO categories(name) VALUES($1) RETURNING *`,
             [name]
