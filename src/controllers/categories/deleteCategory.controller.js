@@ -1,4 +1,4 @@
-import deleteCategoryService from "../services/deleteCategory.service.js"
+import deleteCategoryService from "../../services/categories/deleteCategory.service.js"
 
 const deleteCategoryController = async (request, response) => {
     try {

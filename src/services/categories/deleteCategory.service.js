@@ -1,4 +1,4 @@
-import database from "../database/index.js";
+import database from "../../database/index.js";
 
 const deleteCategoryService = async (categoryId) => {
     try {

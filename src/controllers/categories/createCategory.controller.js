@@ -1,4 +1,4 @@
-import createCategoryService from "../services/createCategory.service.js";
+import createCategoryService from "../../services/categories/createCategory.service.js";
 
 const createCategoryController = async (request, response) => {
     try {

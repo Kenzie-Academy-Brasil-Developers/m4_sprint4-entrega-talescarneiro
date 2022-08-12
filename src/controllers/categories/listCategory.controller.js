@@ -1,4 +1,4 @@
-import listCategoryService from "../services/listCategory.service.js";
+import listCategoryService from "../../services/categories/listCategory.service.js";
 
 const listCategoryController = async (request, response) => {
     try {

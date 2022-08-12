@@ -1,4 +1,4 @@
-import retrieveCategoryService from "../services/retrieveCategory.service.js";
+import retrieveCategoryService from "../../services/categories/retrieveCategory.service.js";
 
 const retrieveCategoryController = async (request, response) => {
     try {
