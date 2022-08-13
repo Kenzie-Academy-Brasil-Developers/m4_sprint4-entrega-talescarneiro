@@ -5,7 +5,7 @@ const updateProductService = async (productId, productData) => {
         if(productData.id) {
             delete productData['id']
         }
-        let query = 'UPDATE users SET '
+        let query = 'UPDATE products SET '
         const keys = Object.keys(productData)
         const values = Object.values(productData)
 
@@ -26,7 +26,7 @@ const updateProductService = async (productId, productData) => {
             throw new Error('Product not found')
         }
 
-        return res.rows[0]
+        return {message: "Product updated", product: res.rows[0]}
     } catch (error) {
         throw new Error(error)
     }
