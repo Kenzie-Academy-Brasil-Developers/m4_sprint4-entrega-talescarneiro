@@ -8,7 +8,7 @@ const retrieveProductByCategoryService = async (categoryId) => {
         )
 
         if(res.rowCount === 0) {
-            throw new Error('There is not product with this category id')
+            throw new Error('There is no product with this category id')
         }
         
         return res.rows

@@ -1,6 +1,3 @@
-CREATE DATABASE products_management;
-CREATE DATABASE tests_products;
-
 CREATE TABLE IF NOT EXISTS categories(
 	id BIGSERIAL PRIMARY KEY,
   	name VARCHAR(20) NOT NULL UNIQUE
